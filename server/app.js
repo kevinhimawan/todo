@@ -29,5 +29,8 @@ const Home = require('./routes/home')
 
 app.use('/registration', Registration);
 app.use('/', Home)
+app.use('/testing', (req,res)=>{
+  console.log('hi')
+})
 
 module.exports = app;
